@@ -1,50 +1,36 @@
-[![ifeanyieze13](https://circleci.com/gh/<ifeanyieze13/kubernete-and-docker-project.svg?style=svg)](https://app.circleci.com/pipelines/github/ifeanyieze13/kubernetes-and-docker-project)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/ifeanyieze13/kubernetes-and-docker-project/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ifeanyieze13/kubernetes-and-docker-project/tree/main)
 
-## Project Overview
+SUMMARY
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
+In this project, I applied the skills you have acquired in the udacity cloud devops nanodegree to operationalize a Machine Learning Microservice API. 
 
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+A pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, was given.
 
-### Project Tasks
-
-Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
-* Test your project code using linting
+my project goal was to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. i went ahead to:
+* Create a virtualenv with Python 3.7 and activate it
 * Complete a Dockerfile to containerize this application
-* Deploy your containerized application using Docker and make a prediction
+* Deploy the containerized application using Docker and make a prediction
 * Improve the log statements in the source code for this application
 * Configure Kubernetes and create a Kubernetes cluster
 * Deploy a container using Kubernetes and make a prediction
-* Upload a complete Github repo with CircleCI to indicate that your code has been tested
+* Upload a complete Github repo with CircleCI to indicate that my code has been tested.
 
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
 
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
 
----
+COMMAND LINE COMMANDS TO RUN APP
 
-## Setup the Environment
+To create a virtual environment: python3 -m virtualenv --python=<path-to-Python3.7> .devops
+To activate virtual environment: source .devops/bin/activate
+To install the necessary dependencies: make install
+To Run app in Docker:  ./run_docker.sh
+To Run app in Kubernetes:  ./run_kubernetes.sh
 
-* Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv. 
-```bash
-python3 -m pip install --user virtualenv
-# You should have Python 3.7 available in your host. 
-# Check the Python path using `which python3`
-# Use a command similar to this one:
-python3 -m virtualenv --python=<path-to-Python3.7> .devops
-source .devops/bin/activate
-```
-* Run `make install` to install the necessary dependencies
 
-### Running `app.py`
+FILES
 
-1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
-
-### Kubernetes Steps
-
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+Makefile: used for Installing dependencies
+requirements.txt: project dependencies are listed in the file
+app.py: The flask application file
+Model_data: Housing data used in building the model
+Dockerfile: contains the configuration for building the docker container
+upload_docker.sh: Shell script to upload the containerized image of application to dockerhub
