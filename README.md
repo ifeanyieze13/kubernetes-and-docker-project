@@ -19,11 +19,11 @@ my project goal was to operationalize this working, machine learning microservic
 
 COMMAND LINE COMMANDS TO RUN APP
 
-To create a virtual environment: python3 -m virtualenv --python=<path-to-Python3.7> .devops
-To activate virtual environment: source .devops/bin/activate
-To install the necessary dependencies: make install
-To Run app in Docker:  ./run_docker.sh
-To Run app in Kubernetes:  ./run_kubernetes.sh
+* To create a virtual environment: python3 -m virtualenv --python=<path-to-Python3.7> .devops
+* To activate virtual environment: source .devops/bin/activate
+* To install the necessary dependencies: make install
+* To Run app in Docker:  ./run_docker.sh
+* To Run app in Kubernetes:  ./run_kubernetes.sh
 
 
 FILES
