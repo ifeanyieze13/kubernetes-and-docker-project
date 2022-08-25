@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![ifeanyieze13](https://circleci.com/gh/<ifeanyieze13/kubernete-and-docker-project.svg?style=svg)](https://app.circleci.com/pipelines/github/ifeanyieze13/kubernetes-and-docker-project)
 
 ## Project Overview
 
