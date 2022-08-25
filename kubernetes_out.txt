@@ -1,5 +1,15 @@
+console output:
 NAME          READY   STATUS    RESTARTS   AGE
 alxproject4   1/1     Running   0          3m9s
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+
+
+output from make_prediction.sh after kubernetes is running:
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
