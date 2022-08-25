@@ -28,9 +28,9 @@ To Run app in Kubernetes:  ./run_kubernetes.sh
 
 FILES
 
-Makefile: used for Installing dependencies
-requirements.txt: project dependencies are listed in the file
-app.py: The flask application file
-Model_data: Housing data used in building the model
-Dockerfile: contains the configuration for building the docker container
-upload_docker.sh: Shell script to upload the containerized image of application to dockerhub
+* Makefile: used for Installing dependencies
+* requirements.txt: project dependencies are listed in the file
+* app.py: The flask application file
+* Model_data: Housing data used in building the model
+* Dockerfile: contains the configuration for building the docker container
+* upload_docker.sh: Shell script to upload the containerized image of application to dockerhub
